@@ -1,0 +1,1004 @@
+/*Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li,
+ol,
+ul {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    background: #222;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.bg_cover {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #ff8b00;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+:root {
+    --bColor: #212529;
+}
+
+/*ALL SECTION TITLE HERE*/
+.section_title {}
+
+.section_title h4 {
+    font-size: 48px;
+    display: block;
+}
+
+.section_title p {
+    width: 585px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #939393;
+}
+
+/* theme_btnn CSS HERE */
+
+
+/******************* END OF COMMON CSS *******************/
+
+/* PRELOADER CSS */
+
+
+/*=============================
+    01. HEADER PART CSS
+==============================*/
+.header_part {
+    background: #222222;
+}
+
+.header_part .navbar {
+    padding: 0;
+}
+
+.header_part .navbar .logo {
+    color: #ff8b00 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu_items {}
+
+.menu_items li {
+    position: relative;
+}
+
+.menu_items li a {
+    color: #fff;
+    text-transform: capitalize;
+    padding: 30px 0;
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.menu_items li a .fa {
+    margin-left: 5px;
+}
+
+.menu_items li ul.dropdown_menu {
+    padding: 0;
+    padding-left: 0;
+    background: #fff;
+    width: 195px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9;
+    border-top: 2px solid #ff8b00;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.menu_items li ul.dropdown_menu li {}
+
+.menu_items li ul.dropdown_menu li a {
+    color: #000;
+    padding: 10px 0;
+    display: block;
+    margin: 0;
+    padding-left: 16px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.menu_items li:hover ul.dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu_items li ul.dropdown_menu li>a:hover {
+    background: rgb(216, 216, 216);
+}
+
+/* STICKY MENU CSS HERE */
+.main_menu.sticky {
+    position: fixed;
+    background: #222222;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999999;
+    animation: stickyAni 3s;
+}
+
+@keyframes stickyAni {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.navbar-toggler .fa {
+    color: #fff;
+}
+
+.navbar-light .navbar-toggler {
+    color: transparent !important;
+    border-color: transparent !important;
+    outline: none !important;
+}
+
+/*=============================
+    02. Banner PART CSS
+==============================*/
+.banner_part {}
+
+.banner_slider {}
+
+.single_banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 1;
+}
+
+.single_banner::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.banner_text_wrapper {}
+
+.banner_text_wrapper h2 {
+    color: #fff;
+    font-size: 65px;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding: 0 300px;
+}
+
+.banner_text_wrapper p {
+    color: #fff;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 0 230px;
+}
+
+.banner_text_wrapper a.banner_btn {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.banner_text_wrapper a.banner_btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.owl-nav {}
+
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px !important;
+    color: #fff !important;
+    left: 50px;
+}
+
+.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px !important;
+    color: #fff !important;
+    right: 50px;
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.owl-dot {
+    background: #acacacb3 !important;
+    width: 30px;
+    height: 8px;
+    border-radius: 5px;
+    margin: 0 3px;
+}
+
+.owl-dot.active {
+    background: #fff !important;
+}
+
+/*=============================
+    03. SERVICES PART CSS
+==============================*/
+.services_part {}
+
+.single_service {}
+
+.s_s_icon {
+    background: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single_service i {
+    color: #ff8b00;
+    font-size: 40px;
+}
+
+.single_service h6 {
+    color: #fff;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.single_service p {
+    line-height: 1.6;
+    color: #939393;
+}
+
+.ser_details {}
+
+.services_details {}
+
+.service_left {}
+
+.service_right {}
+
+.service_right h6 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.service_right p {
+    color: #939393;
+    line-height: 1.7;
+}
+
+.service_right ul {
+    padding: 0;
+}
+
+.service_right ul li {
+    margin-bottom: 15px;
+}
+
+.service_right ul li .fa {
+    color: #ff8b00;
+    font-size: 16px;
+    margin-right: 15px;
+}
+
+.service_right ul li span {
+    color: #939393;
+}
+
+/*=============================
+    04. ABOUT PART CSS
+==============================*/
+.about_part {}
+
+.about_video {}
+
+.about_video a {
+    position: relative;
+}
+
+.about_video a img {}
+
+.about_video a .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    color: #000;
+}
+
+.single_counter span {
+    font-size: 64px;
+    color: #fddd;
+    color: #ff8b00;
+}
+
+.counter_item {
+    position: relative;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.counter_item::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background: #656565;
+    height: 3px;
+    width: 49px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.single_counter h4 span {}
+
+.single_counter p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+/*=============================
+    05. OUR TEAM PART CSS
+==============================*/
+.our_team_part {}
+
+.single_team {
+    text-align: center;
+    background: #333333;
+    padding: 30px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.single_team:hover {
+    transform: translateY(-15px);
+}
+
+.team_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.single_team h6 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.single_team p {
+    color: #b8b8b8;
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.team_icon li {}
+
+.team_icon li a {}
+
+.team_icon li a .fa {
+    background: #ff8b00;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.team_icon li a .fa:hover {
+    color: #000;
+    border: 1px solid aliceblue;
+}
+
+/*=============================
+    06. PRICING PART CSS
+==============================*/
+.pricing_part {}
+
+.single_price {
+    text-align: center;
+    background: #333;
+    padding: 35px 15px;
+}
+
+.single_price span.title {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+}
+
+.single_price h4 {
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.single_price h4 span.tt {
+    font-size: 16px;
+    color: #cccccc;
+    text-transform: lowercase;
+}
+
+.single_price ul.price_info {}
+
+.single_price ul.price_info li {}
+
+.single_price ul.price_info li .fa {
+    font-size: 16px;
+    color: #71bc42;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.single_price ul.price_info li span {
+    color: #939393;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.single_price a.pricing_btn {
+    padding: 15px 30px;
+    background: #6C757D;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 15px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.single_price a.pricing_btn:hover {
+    background: #5a6268;
+    border-color: #545b62;
+}
+
+.single_price a.pricing_btn.active {
+    background: #FF8B00;
+}
+
+.single_price a.pricing_btn.active:hover {
+    background-color: #d97600;
+    border-color: #cc6f00;
+}
+
+/*=============================
+    07. FAQ PART CSS
+==============================*/
+.faq_part {}
+
+.section_title.service.faq h4 {
+    font-size: 32px !important;
+}
+
+.faq_left {}
+
+.single_faq {}
+
+.single_faq h5 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.single_faq p {
+    color: #939393;
+    line-height: 1.7;
+}
+
+/*=============================
+    08. TESTIMONIAL PART CSS
+==============================*/
+.testimonial_part {}
+
+.testi_text {
+    background: #333333;
+    padding: 30px 35px;
+    margin: 0 13px;
+}
+
+.testi_text p {
+    line-height: 1.7;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.testi_img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.testi_img img {}
+
+.single_testimonial span {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.testi_text.rrr {
+    margin-top: 40px;
+}
+
+.slick-dots {
+    position: absolute;
+    top: 100%;
+    margin-top: 60px;
+    text-align: center;
+    left: 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 0;
+    background: #cccccc;
+}
+
+.slick-dots li.slick-active button {
+    background: #ff8b00 !important;
+    width: 25px;
+    height: 8px;
+    border-radius: 5px;
+}
+
+/*=============================
+    09. OUR BLOG PART CSS
+==============================*/
+.our_blog_part {}
+
+.section_title.service.testimoni.blog p {
+    color: #b8b8b8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.single_blog {}
+
+.single_blog h4 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.single_blog h4:hover {
+    color: #b36100;
+}
+
+.single_blog span.one {
+    font-size: 14px;
+    color: #6c757d !important;
+    text-transform: uppercase;
+}
+
+.single_blog span.two {
+    margin-left: 5px;
+}
+
+.single_blog span a {
+    color: #000;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.single_blog span a:hover {
+    color: #ff8b00;
+}
+
+.single_blog p {
+    margin: 30px 0;
+    line-height: 1.7;
+    color: #939393;
+}
+
+.single_blog a.blog_btn {
+    color: #ff8b00;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.single_blog a.blog_btn:hover {
+    color: #b36100;
+}
+
+/*=============================
+    10. CONTACT PART CSS
+==============================*/
+.contact_part {}
+
+.contact_left {}
+
+.contact_form {}
+
+.name_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_form input {
+    border: 0;
+    background: #333;
+    color: #fff;
+    padding: 20px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact_form input:focus {
+    outline: none !important;
+}
+
+.contact_form input.name {
+    width: 48%;
+}
+
+.contact_form input.email {}
+
+.contact_form textarea.contact_msg {
+    border: 0;
+    background: #333;
+    color: #fff;
+    padding: 20px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact_form textarea.contact_msg:focus {
+    outline: none !important;
+}
+
+.contact_btn a {
+    background: #ff8b00;
+    color: #fff;
+    padding: 20px 60px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.contact_btn a:hover {
+    background: #b36100;
+}
+
+.contact_right {}
+
+.contact_right h4 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.contact_right p {
+    line-height: 1.7;
+    color: #939393;
+    margin-bottom: 30px;
+}
+
+.contact_right a.contact_right_btn {
+    background: #ff8b00;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.contact_right a.contact_right_btn:hover {
+    background: #b36100;
+}
+
+/*=============================
+    11. FOOTER PART CSS
+==============================*/
+.footer_part {
+    background: #333;
+}
+
+.row.footer_top {
+    border-bottom: 1px solid #6c6c6c;
+    padding-bottom: 50px;
+}
+
+.footer_left {}
+
+.footer_left h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.footer_left p {
+    line-height: 1.7;
+    color: #fff;
+}
+
+.footer_menu h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.footer_menu ul {}
+
+.footer_menu ul li {}
+
+.footer_menu ul li a {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    line-height: 1.7;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.footer_menu ul li:nth-of-type(7) a {
+    margin-bottom: 0;
+}
+
+.footer_menu ul li a:hover {
+    color: #fff;
+}
+
+.footer_right {}
+
+
+.footer_right h4 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.footer_email {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.footer_email input {
+    background: #333;
+    color: #fff;
+    border: 1px solid #939393;
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+
+.footer_email input:focus {
+    outline: 0 !important;
+
+}
+
+.footer_email a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-transform: capitalize;
+    background: #ff8b00;
+    padding: 23px 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.footer_social {}
+
+.footer_social span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer_social ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.footer_social ul li {}
+
+.footer_social ul li a {}
+
+.footer_social ul li a .fa {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 30px;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.footer_social ul li a .fa:hover {
+    color: #fff;
+}
+
+.footer_bottom span {
+    font-size: 14px;
+}
+
+/*=============================
+    12. PART CSS
+==============================*/
+
+/*=============================
+    13. PART CSS
+==============================*/
+
+/*=============================
+    14. PART CSS
+==============================*/
+
+/*=============================
+    15. PART CSS
+==============================*/
+
+/*=============================
+    16. PART CSS
+==============================*/
+
+/*=============================
+    17. PART CSS
+==============================*/
+
+/*=============================
+    18. PART CSS
+==============================*/
+
+/*=============================
+    19. PART CSS
+==============================*/

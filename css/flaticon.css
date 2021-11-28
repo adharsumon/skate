@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?416eb1d842c1ccb5f25f8aa6232c2e14") format("truetype"),
+url("./flaticon.woff?416eb1d842c1ccb5f25f8aa6232c2e14") format("woff"),
+url("./flaticon.woff2?416eb1d842c1ccb5f25f8aa6232c2e14") format("woff2"),
+url("./flaticon.eot?416eb1d842c1ccb5f25f8aa6232c2e14#iefix") format("embedded-opentype"),
+url("./flaticon.svg?416eb1d842c1ccb5f25f8aa6232c2e14#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-roller-skate:before {
+    content: "\f101";
+}
+.flaticon-skate:before {
+    content: "\f102";
+}
+.flaticon-roller-skate-1:before {
+    content: "\f103";
+}
+.flaticon-skateboard:before {
+    content: "\f104";
+}
+.flaticon-skateboarding-1:before {
+    content: "\f105";
+}
+.flaticon-skate-1:before {
+    content: "\f106";
+}
+.flaticon-skateboarding:before {
+    content: "\f107";
+}
